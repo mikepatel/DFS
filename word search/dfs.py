@@ -46,8 +46,24 @@ def dfs(visited, word_path, i, j):
 ################################################################################
 # Main
 if __name__ == "__main__":
-    board = [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]]
+    # test input 1
+    board = [
+        ["A", "B", "C", "E"],
+        ["S", "F", "C", "S"],
+        ["A", "D", "E", "E"]
+    ]
     word = "ABCCED"
+
+    # test input 2
+    board = [
+        ["A", "A", "A", "A", "A", "A"],
+        ["A", "A", "A", "A", "A", "A"],
+        ["A", "A", "A", "A", "A", "A"],
+        ["A", "A", "A", "A", "A", "A"],
+        ["A", "A", "A", "A", "A", "A"],
+        ["A", "A", "A", "A", "A", "A"]
+    ]
+    word = "AAAAAAAAAAAAAAB"
 
     # driver code
     for i in range(len(board)):  # rows
