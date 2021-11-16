@@ -55,6 +55,7 @@ if __name__ == "__main__":
     word = "ABCCED"
 
     # test input 2
+    """
     board = [
         ["A", "A", "A", "A", "A", "A"],
         ["A", "A", "A", "A", "A", "A"],
@@ -64,8 +65,10 @@ if __name__ == "__main__":
         ["A", "A", "A", "A", "A", "A"]
     ]
     word = "AAAAAAAAAAAAAAB"
+    """
 
     # driver code
+    found = False
     for i in range(len(board)):  # rows
         for j in range(len(board[0])):  # columns
             visited = {}
@@ -74,6 +77,6 @@ if __name__ == "__main__":
             current_column = j
 
             if dfs(visited, word_path, current_row, current_column):
-                print(True)
+                found = True
 
-    print(False)
+    print(found)
